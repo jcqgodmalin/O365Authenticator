@@ -1,14 +1,7 @@
 /**
- * CBE-14282 - New email for DMCA
- * JGODMALI
- * 9/8/2022
  * 
- * JICAuthenticator
- * This class is used to authenticate the DMCA Java Infringement Collector to the Azure AD and connect to
- * Office365 using the access token retrieved from Azure AD.
- * 
- * Steps to use this class:
- * 1. Register JICAuthenticator app in Azure AD. 
+Steps to use this class:
+ * 1. Register O365Authenticator as application in Azure AD. 
  * 		REFERENCE: https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
  * 2. Get Tenant ID, Application Client ID and Client Secret.
  * 3. Add Scope in App's API Permission:
@@ -78,7 +71,7 @@ import com.jic.test.jictest.impl.JicTestAuth;
 public class O365Authenticator {
 	
 	private static final Logger LOG = LoggerFactory
-			.getLogger(JicTestAuth.class);
+			.getLogger(O365Authenticator.class);
 	
 	private String tenantId;
 	private String clientId;
