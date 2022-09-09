@@ -14,25 +14,30 @@ String token = auth.getToken();
 POP3SClient client = auth.getClient();
 
 try {
-  
   client.connect( host, port );
-  
   if (client.login( mailbox, token ) {
-  
-    //do your stuffs here. your app is already connected to your mailbox
-  
+    try {
+      //do your stuffs here. your app is already connected to your mailbox
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    } finally {
+      try {
+        client.logout();
+      } catch (Exception ex) {
+        ex.printStackTrace();
+      }
   } else {
-    
       System.out.println( "Error logging in!");
-  
   }
-
 } catch (Exception ex) {
-  
   ex.printStackTrace();
-  
+} finally {
+  try {
+    client.disconnect();
+  } catch (Exception ex) {
+    ex.printStackTrace();
+  }
 }
-
 
 ```
 
