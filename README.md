@@ -61,12 +61,12 @@ This class uses the ff dependencies. Add them in your `POM.xml` file.
 
 ```
 
-#Your app needs to be registered in Azure AD
+# Your app needs to be registered in Azure AD
 Follow the steps in this guide to register your app in your Azure AD tenant.
 https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
 Also, since this will access the O365 mailbox as an app, add the `POP.AccessAsApp` scope.
 To do so, add a new scope -> API my organization uses -> Office365 Exchange Online -> POP -> POP.AccessAsApp
 
-#Granting your app full access to the mailbox
+# Granting your app full access to the mailbox
 Follow to the steps in this guide to grant your application full access to the O365 Mailbox. Please note that this needs to be performed by someone that has Global Administrator role in your Azure AD tenant.
 https://github.com/jcqgodmalin/grant-o365-access-with-powershell
