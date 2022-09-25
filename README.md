@@ -68,5 +68,5 @@ Also, since this will access the O365 mailbox as an app, add the `POP.AccessAsAp
 To do so, add a new scope -> API my organization uses -> Office365 Exchange Online -> POP -> POP.AccessAsApp
 
 # Granting your app full access to the mailbox
-Follow to the steps in this guide to grant your application full access to the O365 Mailbox. Please note that this needs to be performed by someone that has Global Administrator role in your Azure AD tenant.
+Follow the steps in this guide to grant your application full access to the O365 Mailbox. Please note that this needs to be performed by someone that has Global Administrator role in your Azure AD tenant.
 https://github.com/jcqgodmalin/grant-o365-access-with-powershell
